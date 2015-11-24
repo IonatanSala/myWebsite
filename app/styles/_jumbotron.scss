@@ -1,0 +1,79 @@
+section.jumbotron {
+	background-color: $jumbo-back;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 25px;
+	width: 100%;
+
+	div.jumbo-content {
+		color: $white;
+		text-align: center;
+		margin-bottom: 20px;
+		line-height: 3em;
+		h2 {
+			font-size: 4vw;
+			margin: 0;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: 1.4vw;
+			color: $grey;
+			font-weight: bold;
+		}
+	}
+
+	div.image-container {
+		margin: 0 auto -40px auto;
+		width: 38%;
+	}
+
+	a.btn {
+		padding: 14px 20px;
+		width: 220px;
+		background-color: transparent;
+		color: $white;
+		font-size: 1.1em;
+		font-weight: bold;
+		border: 2px solid $white;
+		border-radius: 30px;
+
+		&:hover {
+			color: black;
+			background-color: $white;
+		}
+	}
+	
+}
+
+
+
+/*
+	MEDIA QUERIES
+*/
+
+/* above ipad size  */
+@media (min-width: 768px) {
+	
+}
+
+/* under ipad size */
+@media (max-width: 767px) {
+	div.image-container {
+		margin: 0 auto 0 auto;
+		width: 80% !important;
+	}
+
+	div.jumbo-content {
+		
+		h2 {
+			font-size: 9vw !important;
+		}
+
+		p {
+			font-size: 4vw !important;
+		}	
+	}
+
+	
+}
